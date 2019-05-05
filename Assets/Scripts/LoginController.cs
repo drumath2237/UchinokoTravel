@@ -27,6 +27,7 @@ public class LoginController : MonoBehaviour
             }
         },
         (System.Exception error) => {
+            errMessageBox.gameObject.SetActive(true);
             errMessageBox.text = "error:\n" + error.ToString();
         });
     }
