@@ -1256,7 +1256,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2036347241}
-  - component: {fileID: 2036347240}
   - component: {fileID: 2036347242}
   m_Layer: 0
   m_Name: ModelSelectManager
@@ -1265,21 +1264,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2036347240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036347239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81c040679e3e0324baaa8595df15cc42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scroll_text: {fileID: 3476906941199319040, guid: 73143066cde8f5f4695cfb1a08b73d2d,
-    type: 3}
-  scroll_content: {fileID: 77174318}
 --- !u!4 &2036347241
 Transform:
   m_ObjectHideFlags: 0
@@ -1306,3 +1290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24907ac670ae7c24893cb2e5aefd1ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  content: {fileID: 77174318}
+  characterModelPanel: {fileID: 3476906941199319040, guid: 73143066cde8f5f4695cfb1a08b73d2d,
+    type: 3}
