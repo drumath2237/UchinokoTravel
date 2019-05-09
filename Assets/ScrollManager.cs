@@ -11,8 +11,8 @@ public class ScrollManager : MonoBehaviour
     {
         for(int i=0; i<10; i++)
         {
-            var txt = Instantiate(scroll_text, scroll_content.transform);
-            txt.GetComponent<UnityEngine.UI.Text>().text = i.ToString();
+            var panel = Instantiate(scroll_text, scroll_content.transform);
+            panel.transform.GetChild(1).gameObject.GetComponent<Text>().text = i.ToString();
         }
     }
 
