@@ -11,6 +11,8 @@ public class LoginController : MonoBehaviour
     BrowserAuthorize browserAuthorize;
 
     [SerializeField] Text errMessageBox;
+
+    [SerializeField] string registercode;
     public void Login()
     {
         Authentication.Instance.Init(sdkConfiguration.AuthenticateMetaData);
@@ -30,6 +32,16 @@ public class LoginController : MonoBehaviour
             errMessageBox.gameObject.SetActive(true);
             errMessageBox.text = "error:\n" + error.ToString();
         });
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            browserAuthorize.RegisterCode(registercode);
+            //Login();
+            AfterAuth(true);
+        }
     }
 
     void AfterAuth(bool isRegistered)
